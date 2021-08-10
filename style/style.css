@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap");
 body {
   font-family: 'Raleway', sans-serif;
-  margin: auto;
   width: auto;
+  margin: auto;
   max-width: 1440px;
 }
 
@@ -86,7 +86,7 @@ a, h3, span {
   cursor: pointer;
 }
 .filter_title {
-  margin: 0 32px 16px 0;
+  margin: 0 2rem 1rem 0;
   display: flex;
   align-items: center;
 }
@@ -95,12 +95,13 @@ a, h3, span {
   flex-wrap: wrap;
   cursor: pointer;
 }
+
 .filter_flex li {
   display: flex;
-  align-items: center;
-  margin: 5px;
   border: 3px solid #F2F2F2;
   border-radius: 30px;
+  align-items: center;
+  margin: 5px;
   position: relative;
 }
 .filter_flex p {
@@ -108,20 +109,19 @@ a, h3, span {
 }
 .filter_icon i {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   color: #0065fc;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   font-size: 18px;
-  
+  justify-content: center;
+  align-items: center;
   margin: -3px;
 }
 .filter_flex li:hover {
   background-color: #F2F2F2;
-  transform: perspective(10px);
+  transform: scale(1);
 }
 .blue {
   color:#0065fc;
@@ -137,54 +137,105 @@ a, h3, span {
 }
 .location i {
   display: flex;
-  justify-content: center;
+  border: 2px solid #F2F2F2;
+  color: #0065fc;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
   width: 25px;
   height: 25px;
-  align-items: center;
-  color: #0065fc;
-  margin: 0 10px 0 0;
   font-size: 12px;
-  border-radius: 50%;
-  border: 2px solid #F2F2F2;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+/*@media screen and (min-width: 1280px) {
+  .main-content {
+    flex-direction: row;
   }
-  .article_hebergement {
-    background-color: #F2F2F2;
-    padding: 32px;
-    border-radius: 24px;
-    width: 90%;
-  }
-  .hebergement_main {
-    padding: 0 20px;
-  }
-  .hebergement_flex {
-    display: flex;
-  }
-  .article_hebergement article {
-    height: 200px;
-    border-radius: 20px;
-    margin: 10px 10px;
-    padding: 5px;
-    box-shadow: 0 0 10px 2px #F2F2F2;
-  }
-  .article_hebergement img {
-    height: 112px;
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
-    border-radius: 16px 16px 0 0;
-  }
-  .article_hebergement article:hover {
-    transform: perspective(18px);
-  }
-  .stars {
-    font-size: 10px;
-  }
-  .conteneur {
-    display: flex;
-  }
+}*/
+
+.article_hebergement {
+  background-color: #F2F2F2;
+  padding: 32px;
+  border-radius: 24px;
+  width: 90%;
+}
+.hebergement_main {
+  padding: 0 20px;
+}
+.hebergement_flex {
+  display: flex;
+}
+.article_hebergement article {
+  height: 225px;
+  width: 225px;
+  border-radius: 20px;
+  margin: 10px 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px 2px #bababa;
+}
+.article_hebergement img {
+  height: 112px;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.article_hebergement article:hover {
+  transform: scaleX(1.05);
+}
+.stars {
+  font-size: 10px;
+}
+.conteneur {
+  display: flex;
+}
+.popular_aside{
+  background-color: #F2F2F2;
+  padding: 32px;
+  border-radius: 24px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.popular {
+  margin-bottom: 40px;
+}
+.popular_aside img {
+  border-radius: 16px 0 0 16px;
+  position: absolute;
+  width: 5%;
+  height: 125px;
+  object-fit: cover;
+}
+.popular_aside article {
+  height: 125px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 5px;
+  box-shadow: 0 0 10px 2px #cfcfcf;
+}
+.popular_aside article:hover {
+   transform: scaleX(1.05);
+}
+.popular_title {
+  margin-bottom: 40px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.desc_popular {
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.popular_content {
+  height: 100%;
+}
