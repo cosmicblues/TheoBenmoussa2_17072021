@@ -28,6 +28,9 @@ a, h3, span {
   align-items: center;
   margin-left: auto;
 }
+.head_nav_hidden {
+  display: none;
+}
 .head_link {
   padding: 30px;
   transition-duration: 0.1s;
@@ -86,7 +89,6 @@ a, h3, span {
   cursor: pointer;
 }
 .filter_title {
-  margin: 0 32px 36px 0;
   display: flex;
   align-items: center;
 }
@@ -94,6 +96,9 @@ a, h3, span {
   display: flex;
   flex-wrap: wrap;
   cursor: pointer;
+}
+.filters {
+  display: flex;
 }
 
 .filter_flex li {
@@ -201,7 +206,12 @@ a, h3, span {
   flex-direction: column;
 }
 .popular {
+  display: flex;
   margin-bottom: 40px;
+}
+.popular i {
+  font-size: 25px;
+  margin-left: 130px;
 }
 .popular_aside img {
   border-radius: 16px 0 0 16px;
@@ -335,12 +345,44 @@ a, h3, span {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 1000px) {
-   .location p {
-    font-size: 20px;
-    text-align: center;
+  .head_img {
+    width: 90px;
+  }
+  .filter_flex {
+    padding: 0 !important;
+  }
+  .popular i {
+    margin-left: 600px;
+  }
+  .search_text {
+    display: none;
+  }
+  .head_nav_hidden {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .head_nav{
+    display: none;
+  }
+  .filters {
+    display: block;
+  }
+  .location p {
+  font-size: 20px;
+  text-align: center;
   }
   .hebergement_flex {
     display: block !important;
+  }
+  .hebergement_main {
+    padding: 0;
+  }
+  .none {
+    display: none;
+  }
+  .article_hebergement {
+    background-color: white;
   }
   .conteneur {
     flex-direction: column-reverse;
@@ -350,9 +392,19 @@ a, h3, span {
   }
   .article_hebergement article {
     width: 95%;
+    height: 260px;
   }
+  .article_hebergement img {
+    height: 155px;
+}
   .popular_aside {
     width: 95%;
+  }
+  .popular_aside img {
+    width: 27%;
+  }
+  .desc_popular {
+    margin-left: 300px;
   }
   .activity {
     row-gap: 32px;
