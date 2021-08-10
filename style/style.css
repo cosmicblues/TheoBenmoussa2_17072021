@@ -216,7 +216,7 @@ a, h3, span {
 .popular_aside img {
   border-radius: 16px 0 0 16px;
   position: absolute;
-  width: 7%;
+  width: 135px;
   height: 125px;
   object-fit: cover;
 }
