@@ -345,8 +345,17 @@ a, h3, span {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 1000px) {
+  .header {
+    width: 54%;
+    text-align: center;
+  }
+  .sign_up{
+    width: 56%;
+    font-size: 21px;
+    margin-left: 215px;
+  }
   .head_img {
-    width: 90px;
+    width: 162px;
   }
   .filter_flex {
     padding: 0 !important;
@@ -358,9 +367,18 @@ a, h3, span {
     display: none;
   }
   .head_nav_hidden {
-    display: flex;
+    display: block;
     align-items: center;
     margin-left: auto;
+    border-top: none;
+    border-bottom: 3px solid transparent;
+  }
+  .head_link {
+    margin-left: 212px;
+  }
+  .head_link:hover {
+    border-top: 1px solid transparent !important;
+    border-bottom: 4px solid #0065FC;
   }
   .head_nav{
     display: none;
